@@ -1,0 +1,49 @@
+{
+  "name": "Infinity",
+  "description": "Maybe its infinite or maybe its a bot I don't really know but I do know is --Possibilities are in our Name !",
+  
+"keywords": ["bot", "whatsapp", "stickers", "whatsapp-stickers", "anime", "whatsapp-bot", "whatsapp-sticker-bot", "whatsapp-botto", "baileys", "baileys-md", "ut-bot", "custom stickers", "animated stickers", "funny stickers", "emoticon stickers", "memes stickers", "celebrity stickers", "movie stickers", "TV show stickers", "sports stickers", "cute stickers", "love stickers", "romantic stickers", "music stickers", "gaming stickers", "superhero stickers", "pet stickers", "travel stickers", "food stickers", "holiday stickers", "festive stickers", "trending stickers", "unique stickers", "creative stickers", "expressive stickers", "cool stickers", "hilarious stickers", "iconic stickers", "stylish stickers", "fashion stickers", "artistic stickers", "minimalistic stickers", "vintage stickers", "nature stickers", "wildlife stickers", "fantasy stickers", "magical stickers", "inspirational stickers", "motivational stickers", "friendship stickers", "adventure stickers"],
+  "website": "https://github.com/SphinX2k6/Infinity-UT#readme",
+  "repository": "https://github.com/SphinX2k6/Infinity-UT.git",
+  "logo": "https://graph.org/file/b669aa88f4ced27b98532.jpg",
+  "success_url": "/",
+  "env": {
+    "PREFIX": {
+      "description": "Prefix of your bot Ex: . , / , # , & etc. Put anythong except @ (Default is -)",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "A random string for your bot session. Which works as an OTP to get qr code. You have to change session every time to get a new qr."
+    },
+    "MODS": {
+      "description": "Put any phone number without + , () and spaces \",\" Ex: 918101187835,929864781259 )",
+      "required": false
+    },
+    "TENOR_API_KEY": {
+      "description": "A key used for gif searches. If you don't have any keet it default: AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c",
+      "required": false
+    },
+    "PACKNAME": {
+      "description": "Put a sticker packname here. Default is: Atlas Bot",
+      "required": false
+    },
+    "MONGODB": {
+      "description": "Put Your MongoDB URL. You can create MongoDB Atlas URL for free."
+    },
+    "OPENAI_API": {
+      "description": "Put your OpenAI API key here if you want to use ChatGPT and DALL-E.",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ]
+}
