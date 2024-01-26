@@ -35,7 +35,7 @@
     "@hapi/boom": "^10.0.1",
     "@napi-rs/canvas": "^0.1.41",
     "@xct007/frieren-scraper": "^0.0.2",
-    "1infbaileysjs": "^6.4.0",
+    "1infbaileysjs": "npm:@jcteh8885/baileys@1.0.6",
     "api-dylux": "^1.6.5",
     "async-retry": "^1.3.3",
     "axios": "^1.2.2",
