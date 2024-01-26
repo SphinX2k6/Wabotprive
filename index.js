@@ -424,7 +424,7 @@ const startInfinity = async () => {
 
 startInfinity();
 
-app.use("/", express.static(join(__dirname, "Frontend")));
+app.use("/app", express.static(join(__dirname, "Frontend")));
 
 app.get("/qr", async (req, res) => {
   const { session } = req.query;
